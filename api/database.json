@@ -1,0 +1,39 @@
+{
+  "legos": [
+    {
+      "id": 1,
+      "creator": "Per Sun",
+      "color": "Black",
+      "shape": "Animal",
+      "creation": "Black Cow"
+    },
+    {
+      "creator": "dNNY",
+      "color": "blue",
+      "shape": "circle",
+      "creation": "adjdjf",
+      "id": 2
+    },
+    {
+      "creator": "wew",
+      "color": "yellow",
+      "shape": "rectangle",
+      "creation": "wewewee",
+      "id": 3
+    },
+    {
+      "creator": "newOne",
+      "color": "blue",
+      "shape": "circle",
+      "creation": "one",
+      "id": 4
+    },
+    {
+      "creator": "s",
+      "color": "black",
+      "shape": "square",
+      "creation": "f",
+      "id": 5
+    }
+  ]
+}
