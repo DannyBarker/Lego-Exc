@@ -1,6 +1,6 @@
-import { getJson, addList } from "./api.js";
+import { API, addList } from "./api.js";
 import { triggerListener } from "./event.js";
 
-getJson().then(legoObj => addList(legoObj));
+API.getJson().then(addList);
 
 triggerListener();

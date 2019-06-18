@@ -1,4 +1,4 @@
-import { addToJson, getJson, addList } from "./api.js";
+import { API, addList } from "./api.js";
 
 let pickedColor = document.querySelector("#color");
 let creatorName = document.querySelector("#nameInput");
@@ -26,10 +26,9 @@ const triggerListener = () => {
     addCardHere.innerHTML = "";
     if (pickedColor.value && creatorName.value && creationName.value && pickedShape.value) {
       addToObj();
-      addToJson(legoToSave).then(response => {
-        getJson().then(addList);
-      });
+      API.addToJson(legoToSave).then( newData => API.getJson().then(addList));
     }
   });
 };
+
 export { triggerListener };
