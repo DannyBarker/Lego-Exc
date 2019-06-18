@@ -8,31 +8,31 @@
       "creation": "Black Cow"
     },
     {
-      "creator": "dNNY",
+      "creator": "Danny",
       "color": "blue",
-      "shape": "circle",
-      "creation": "adjdjf",
+      "shape": "square",
+      "creation": "The Best",
       "id": 2
     },
     {
-      "creator": "wew",
-      "color": "yellow",
+      "creator": "Olivia",
+      "color": "red",
       "shape": "rectangle",
-      "creation": "wewewee",
+      "creation": "The Greatest",
       "id": 3
     },
     {
-      "creator": "newOne",
-      "color": "blue",
-      "shape": "circle",
-      "creation": "one",
+      "creator": "Shawncy",
+      "color": "yellow",
+      "shape": "triangle",
+      "creation": "GOAT",
       "id": 4
     },
     {
-      "creator": "s",
-      "color": "black",
+      "creator": "Mattie",
+      "color": "blue",
       "shape": "square",
-      "creation": "f",
+      "creation": "Better Than Olivia's",
       "id": 5
     }
   ]
