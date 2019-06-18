@@ -1,7 +1,9 @@
 import { createCard } from "./DOM.js";
 const addList = jsonData => {
+    let num = 1
   jsonData.forEach(obj => {
-    createCard(obj);
+    createCard(obj, num);
+    num++;
   });
 };
 

@@ -5,8 +5,8 @@ const createString = obj => {
     return `${obj.creator} made a ${obj.color}, ${obj.shape} lego and named it "${obj.creation}"!`;
 };
 
-let num = 1;
-const makeHTML = arrObj => {
+
+const makeHTML = (arrObj, num) => {
     let newEl = document.createElement("div");
     newEl.setAttribute("id", `card-${num}`);
     newEl.innerHTML = `<p>${createString(arrObj)}</p>`;
@@ -15,11 +15,10 @@ const makeHTML = arrObj => {
 
 const addToDom = (section, card) => {
     section.appendChild(card);
-    num++
 };
 
-const createCard = jsonData => {
-  let newCard = makeHTML(jsonData);
+const createCard = (jsonData, num) => {
+  let newCard = makeHTML(jsonData, num);
   addToDom(addCardHere, newCard);
 };
 

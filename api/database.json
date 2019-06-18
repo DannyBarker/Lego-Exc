@@ -13,27 +13,6 @@
       "shape": "square",
       "creation": "The Best",
       "id": 2
-    },
-    {
-      "creator": "Olivia",
-      "color": "red",
-      "shape": "rectangle",
-      "creation": "The Greatest",
-      "id": 3
-    },
-    {
-      "creator": "Shawncy",
-      "color": "yellow",
-      "shape": "triangle",
-      "creation": "GOAT",
-      "id": 4
-    },
-    {
-      "creator": "Mattie",
-      "color": "blue",
-      "shape": "square",
-      "creation": "Better Than Olivia's",
-      "id": 5
     }
   ]
 }
