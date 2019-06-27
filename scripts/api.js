@@ -1,6 +1,8 @@
 import { createCard } from "./DOM.js";
 
 const addList = jsonData => {
+  let addCardHere = document.querySelector("#legoList");
+  addCardHere.innerHTML = "";
     let num = 1
   jsonData.forEach(obj => {
     createCard(obj, num);
@@ -19,6 +21,23 @@ const API = {
     },
     body: JSON.stringify(newObj)
   }).then(newStuff => newStuff.json())
+    },
+    deleteLego: id => {
+      return fetch (`http://localhost:8088/legos/${id}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+    },
+    updateLego: (updatedLego) => {
+      return fetch(`http://localhost:8088/legos/${updatedLego.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(updatedLego)
+      })
     }
 }
 

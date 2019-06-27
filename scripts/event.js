@@ -7,28 +7,42 @@ let pickedShape = document.querySelector("#shape");
 let addCardHere = document.querySelector("#legoList");
 let saveBtn = document.querySelector("#createLego");
 
-let legoToSave = {
-  creator: "",
-  color: "",
-  shape: "",
-  creation: ""
-};
-
-const addToObj = () => {
-  legoToSave.color = pickedColor.value;
-  legoToSave.creator = creatorName.value;
-  legoToSave.creation = creationName.value;
-  legoToSave.shape = pickedShape.value;
+const addToObj = (a, b, c, d) => {
+  let legoToSave = {
+    id: "",
+    creator: "",
+    color: "",
+    shape: "",
+    creation: ""
+  };
+  legoToSave.color = a
+  legoToSave.creator = b
+  legoToSave.creation = c
+  legoToSave.shape = d
+return legoToSave
 };
 
 const triggerListener = () => {
   saveBtn.addEventListener("click", () => {
     addCardHere.innerHTML = "";
     if (pickedColor.value && creatorName.value && creationName.value && pickedShape.value) {
-      addToObj();
-      API.addToJson(legoToSave).then( newData => API.getJson().then(addList));
+      let obj = addToObj(pickedColor.value, creatorName.value, creationName.value, pickedShape.value);
+      API.addToJson(obj).then( newData => API.getJson().then(addList));
     }
   });
 };
-
-export { triggerListener };
+const editEvent = ( editContainer) => {
+  document.querySelector("#editLego").addEventListener('click', () => {
+    let pickedColor = document.querySelector("#color-editor").value;
+    let creatorName = document.querySelector("#name-editor").value;
+    let creationName = document.querySelector("#creation-editor").value;
+    let pickedShape = document.querySelector("#shape-editor").value;
+    let addCardHere = document.querySelector("#legoList");
+    addCardHere.innerHTML = "";
+    let editObj = addToObj(pickedColor, creatorName, creationName, pickedShape);
+    editObj.id = `${editContainer}`
+    console.log(editObj);
+    API.updateLego(editObj).then( newData => API.getJson().then(addList));
+  })
+}
+export {triggerListener, addToObj, editEvent}

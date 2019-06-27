@@ -1,13 +1,6 @@
 {
   "legos": [
     {
-      "id": 1,
-      "creator": "Per Sun",
-      "color": "Black",
-      "shape": "Animal",
-      "creation": "Black Cow"
-    },
-    {
       "creator": "Danny",
       "color": "blue",
       "shape": "square",
@@ -15,18 +8,25 @@
       "id": 2
     },
     {
+      "id": 3,
       "creator": "Olivia",
       "color": "red",
-      "shape": "circle",
-      "creation": "The GOAT",
-      "id": 3
+      "shape": "animal",
+      "creation": "GOAT"
     },
     {
-      "creator": "Shawncy",
-      "color": "yellow",
+      "id": 4,
+      "creator": "Danny",
+      "color": "blue",
       "shape": "rectangle",
-      "creation": "Better Than Olivia's",
-      "id": 4
+      "creation": "Test"
+    },
+    {
+      "id": 5,
+      "creator": "testtt",
+      "color": "black",
+      "shape": "rectangle",
+      "creation": "ttttt"
     }
   ]
 }
